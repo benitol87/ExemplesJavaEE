@@ -15,9 +15,13 @@
 		
 		<ul class="list-group">
 			<li class="list-group-item">
-				<p>
-					Exemple 1 : Formulaires de saisie d'informations sur un client ou une commande et affichage de ces infos
-				</p>
+				Exemple 1 : Formulaires de saisie d'informations sur un client ou une commande et affichage de ces infos
+			</li>
+			<li class="list-group-item">
+				Exemple 2 : Inscription, connexion, déconnexion
+			</li>
+			<li class="list-group-item">
+				Exemple 3 : Upload, download d'un fichier
 			</li>
 		</ul>
 	</div>

@@ -13,8 +13,11 @@
 
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav">
-					<li><a href="/ExemplesJavaEE/jsp/accueil.jsp">Accueil</a></li>
-					<li class="dropdown"><a href="#" class="dropdown-toggle"
+					<li>
+						<a href="/ExemplesJavaEE/jsp/accueil.jsp">Accueil</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle"
 						data-toggle="dropdown" role="button" aria-expanded="false">Exemple 1
 							<span class="caret"></span>
 						</a>
@@ -23,7 +26,27 @@
 							<li><a href="/ExemplesJavaEE/jsp/exemple1/creerCommande.jsp">Créer une commande</a></li>
 						</ul>
 					</li>	
-					<li><a href="/ExemplesJavaEE/inscription">Exemple 2</a></li>				
+					<li>
+						<a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button" aria-expanded="false">Exemple 2
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="/ExemplesJavaEE/inscription">Inscription</a></li>
+							<li><a href="/ExemplesJavaEE/connexion">Connexion</a></li>
+							<li><a href="/ExemplesJavaEE/deconnexion">Deconnexion</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button" aria-expanded="false">Exemple 3
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="/ExemplesJavaEE/upload">Upload</a></li>
+							<li><a href="/ExemplesJavaEE/fichiers/test.txt">Download</a></li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 			<!--/.nav-collapse -->

@@ -16,27 +16,29 @@
                 <p class="help-block">Vous pouvez vous inscrire via ce formulaire.</p>
 
                 <label class="control-label" for="email">Adresse email <span class="requis">*</span></label>
-                <input class="form-control" type="email" id="email" name="email" value="" size="20" maxlength="60" />
-                <span class="erreur">${erreurs['email']}</span>
+                <input class="form-control" type="email" id="email" name="email" value="<c:out value="${utilisateur.email}"/>" size="20" maxlength="60" />
+                <span class="text-danger">${form.erreurs['email']}</span>
                 <br />
 
                 <label class="control-label" for="motdepasse">Mot de passe <span class="requis">*</span></label>
                 <input class="form-control" type="password" id="motdepasse" name="motdepasse" value="" size="20" maxlength="20" />
-                <span class="erreur">${erreurs['motdepasse']}</span>
+                <span class="text-danger">${form.erreurs['motdepasse']}</span>
                 <br />
 
                 <label class="control-label" for="confirmation">Confirmation du mot de passe <span class="requis">*</span></label>
                 <input class="form-control" type="password" id="confirmation" name="confirmation" value="" size="20" maxlength="20" />
-                <span class="erreur">${erreurs['confirmation']}</span>
+                <span class="text-danger">${form.erreurs['confirmation']}</span>
                 <br />
 
                 <label class="control-label" for="nom">Nom d'utilisateur</label>
-                <input class="form-control" type="text" id="nom" name="nom" value="" size="20" maxlength="20" />
-                <span class="erreur">${erreurs['nom']}</span>
+                <input class="form-control" type="text" id="nom" name="nom" value="${utilisateur.nom}" size="20" maxlength="20" />
+                <span class="text-danger">${form.erreurs['nom']}</span>
                 <br />
 
                 <input type="submit" value="Inscription" class="btn btn-primary" />
                 <br />
+                
+                <p class="${empty erreurs ? 'text-success' : 'text-danger'}">${form.resultat}</p>
             </fieldset>
         </form>
         
