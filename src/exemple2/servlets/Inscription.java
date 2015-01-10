@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import exemple2.beans.Utilisateur;
 import exemple2.form.InscriptionForm;
 
-@WebServlet("/inscription")
+@WebServlet(name="Inscription", urlPatterns={"/inscription"})
 public class Inscription extends HttpServlet{
 
 	private static final long serialVersionUID = 1L;

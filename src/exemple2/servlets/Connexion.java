@@ -15,7 +15,7 @@ import exemple2.form.ConnexionForm;
 /**
  * Servlet implementation class Connexion
  */
-@WebServlet("/connexion")
+@WebServlet(name="Connexion", urlPatterns={"/connexion"})
 public class Connexion extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	public static final String ATT_USER         = "utilisateur";

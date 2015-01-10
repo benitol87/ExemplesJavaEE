@@ -14,7 +14,7 @@
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav">
 					<li>
-						<a href="/ExemplesJavaEE/jsp/accueil.jsp">Accueil</a>
+						<a href="/ExemplesJavaEE/index.jsp">Accueil</a>
 					</li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle"

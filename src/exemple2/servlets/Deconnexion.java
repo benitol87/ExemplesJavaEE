@@ -12,7 +12,7 @@ import javax.servlet.http.HttpSession;
 /**
  * Servlet implementation class Deconnexion
  */
-@WebServlet("/deconnexion")
+@WebServlet(name="Deconnexion", urlPatterns={"/deconnexion"})
 public class Deconnexion extends HttpServlet {
 
 	/**

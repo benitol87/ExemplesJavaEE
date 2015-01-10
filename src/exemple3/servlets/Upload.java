@@ -17,7 +17,7 @@ import exemple3.form.UploadForm;
 /**
  * Servlet implementation class Upload
  */
-@WebServlet(urlPatterns={"/upload"}, initParams= {@WebInitParam(name="chemin", value="C:\\fichiers\\")})
+@WebServlet(name="Upload", urlPatterns={"/upload"}, initParams= {@WebInitParam(name="chemin", value="C:\\fichiers\\")})
 @MultipartConfig
 public class Upload extends HttpServlet {
 	private static final long serialVersionUID = 1L;

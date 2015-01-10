@@ -9,6 +9,7 @@ import java.net.URLDecoder;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,8 +19,8 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class Download
  */
-@WebServlet(urlPatterns={"/fichiers/*"}, initParams={@WebInitParam(name="chemin", value="C:\\fichiers\\")})
-//@WebServlet(urlPatterns = { "/fichiers/*" }, initParams = { @WebInitParam(name = "chemin", value = "/fichiers/") })
+@WebServlet(name="Download", urlPatterns={"/fichiers/*"}, initParams={@WebInitParam(name="chemin", value="C:\\fichiers\\")})
+@MultipartConfig( location = "c:/fichiers", maxFileSize = 10 * 1024 * 1024, maxRequestSize = 5 * 10 * 1024 * 1024, fileSizeThreshold = 1024 * 1024 )
 public class Download extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private static final int DEFAULT_BUFFER_SIZE = 10240; // 10 ko

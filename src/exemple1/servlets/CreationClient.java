@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import exemple1.beans.Client;
 
-@WebServlet("/ex1/creationClient")
+@WebServlet(name="CreationClient", urlPatterns={"/ex1/creationClient"})
 public class CreationClient extends HttpServlet {
 	/**
 	 * 

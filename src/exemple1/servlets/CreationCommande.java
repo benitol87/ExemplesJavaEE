@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import exemple1.beans.Client;
 import exemple1.beans.Commande;
 
-@WebServlet("/ex1/creationCommande")
+@WebServlet(name="CreationCommande", urlPatterns={"/ex1/creationCommande"})
 public class CreationCommande extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
